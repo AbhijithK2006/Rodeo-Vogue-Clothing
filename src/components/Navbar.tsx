@@ -66,15 +66,17 @@ export default function Navbar() {
           className={cn(
             "absolute left-1/2 -translate-x-1/2 top-0 transition-all duration-700 ease-silk flex items-center justify-center z-10",
             dark
-              ? "bg-ink px-10 py-3 rounded-b-[2rem] shadow-2xl min-w-[260px]"
+              ? "bg-ink px-6 md:px-10 py-3 rounded-b-[2rem] shadow-2xl min-w-[200px] md:min-w-[260px]"
               : "bg-transparent py-6"
           )}
         >
           <Link
             to="/"
             className={cn(
-              "font-transcity tracking-[0.35em] transition-all duration-700",
-              dark ? "text-bone text-base md:text-lg" : "text-foreground text-2xl md:text-[28px]"
+              "font-transcity transition-all duration-700 whitespace-nowrap",
+              dark 
+                ? "text-bone text-base tracking-[0.25em] md:tracking-[0.35em] md:text-lg" 
+                : "text-foreground text-lg tracking-[0.2em] md:tracking-[0.35em] md:text-[28px]"
             )}
           >
             RODEO VOGUE
