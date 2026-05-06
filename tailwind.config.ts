@@ -13,8 +13,8 @@ export default {
     extend: {
       fontFamily: {
         transcity: ['Transcity', 'serif'],
-        sans: ['"Mileast"', 'sans-serif'],
-        serif: ['"Mileast"', 'serif'],
+        sans: ['"Google Sans"', 'sans-serif'],
+        serif: ['"Google Sans"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -22,10 +22,10 @@ export default function ProductCard({ product, index = 0 }: { product: Product; 
             <span className="text-[11px] uppercase tracking-[0.3em]">Discover</span>
           </div>
         </div>
-        <div className="mt-5 flex items-baseline justify-between gap-4">
+        <div className="mt-4 md:mt-5 flex flex-col md:flex-row md:items-baseline justify-between gap-1 md:gap-4">
           <div>
-            <p className="eyebrow">{product.category}</p>
-            <h3 className="font-serif text-xl mt-1">{product.name}</h3>
+            <p className="eyebrow text-[9px] md:text-[11px]">{product.category}</p>
+            <h3 className="font-serif text-base md:text-xl mt-1">{product.name}</h3>
           </div>
           <p className="text-sm tabular-nums">${product.price.toLocaleString()}</p>
         </div>

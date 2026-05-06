@@ -194,7 +194,7 @@ export default function Home() {
           <p className="eyebrow">Selected</p>
           <h2 className="mt-3 font-serif text-4xl md:text-6xl">The Season</h2>
         </div>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 md:gap-8 lg:grid-cols-4">
           {products.map((p, i) => (
             <ProductCard key={p.id} product={p} index={i} />
           ))}
